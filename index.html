@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 短视频视觉风格选片与盲测档案 · 柔和唯美无柱风 vs 纪实拆层图谱（实时 60fps 动态演播）</title>
+  <meta name="description" content="收录 10 款抖音知识大赏与深度纪实 AI 短视频视觉风格：涵盖星萤焦外散点、琉璃玉珠涟漪、风之旅人暮色沙丘、暖夜孔明灯海、棉浆水彩流场等柔和无柱美学及调查纪录片/拆层 MG 引擎，支持实时 60fps 动态预览、A/B 拉帘对比与一键复制选片口令。" />
+  <meta property="og:title" content="AI 短视频视觉风格选片与盲测档案（10 款实测）" />
+  <meta property="og:description" content="与 Azure 配音音色盲测台配套的视觉美术选片库：支持实时 60fps 动态画面演播、A/B 拉帘同屏对比与一键复制选片口令。" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="topbar">
+        <div class="studio-mark">
+          <span class="studio-led" aria-hidden="true"></span>
+          <span>AI-VIDEOS · VISUAL STYLE ARCHIVE · 10 CURATED ENGINES</span>
+        </div>
+        <div class="topbar-actions">
+          <a id="drive-folder-btn" class="action-link primary-drive" href="https://drive.google.com/drive/folders/1ngoosSWhNdJasBvUNxKgoJIuRdS230Sw" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            <span>Google 云盘无损原图库</span>
+          </a>
+          <a id="sibling-tts-btn" class="action-link" href="https://endiaoshuai.github.io/azure-tts-audition/" target="_blank" rel="noopener noreferrer">
+            <span>配音音色盲测台 (37款) ↗</span>
+          </a>
+          <a id="github-repo-btn" class="action-link" href="https://github.com/Endiaoshuai/video-style-gallery" target="_blank" rel="noopener noreferrer">
+            <span>GitHub 仓库</span>
+          </a>
+          <button id="theme-toggle-btn" type="button" class="icon-toggle" aria-label="切换深浅色主题">
+            <span id="theme-toggle-label">深色暗房</span>
+          </button>
+        </div>
+      </div>
+
+      <h1 class="hero-title">AI 短视频视觉风格选片与盲测档案</h1>
+      <p class="hero-subtitle">
+        与「Azure 中文配音盲测台」配套的视觉美术选片库。完整归档 <strong>5 款去柱体柔和唯美风（星萤焦外散点、温润玉珠涟漪、风之旅人暮色沙丘、暖夜千灯云海、棉浆水彩流场）</strong> 以及工作室 <strong>5 款实战量产引擎（003 暗黑调查纪实、DK 拆层插画 MG、赛璐珞墨线图谱、普鲁士蓝图、纪念碑谷等轴）</strong>。支持 60fps 实时动态演播、A/B 左右拉帘对比与一键复制选片口令。
+      </p>
+
+      <div class="script-specimen">
+        <span class="specimen-label">柔和系列统一母题</span>
+        <span class="specimen-quote">
+          以《37% 定律 · 九万九千次随机命运模拟》为同一视觉标尺，彻底摒弃生硬矩形柱体，横评光斑、水珠、丝绸沙丘、天灯与水彩流线五种柔性叙事语言。
+        </span>
+        <span class="specimen-meta">用法：看中哪款直接点「复制选片口令」发给 AI 即可开拍</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Quick Pick Strip Highlighting the 4 Unused Soft Styles + Chosen Style -->
+    <section class="verdict-strip" aria-labelledby="verdict-heading">
+      <div class="verdict-header">
+        <h2 id="verdict-heading" class="verdict-heading">柔和无柱系列速览 · 4 款待选宝藏存档 + 1 款已投产</h2>
+        <span class="verdict-summary">点击任意卡片可直接打开 60fps 实时动态舞台预览动效呼吸感</span>
+      </div>
+      <div class="verdict-picks">
+        <button id="quick-pick-firefly" type="button" class="verdict-pill-card" data-id="style-01-firefly-bokeh">
+          <div>
+            <span class="verdict-pill-title">01 星萤焦外散点 · 信息论纯血风</span>
+            <span class="verdict-pill-sub">适合概率、宇宙、信息论、复杂涌现</span>
+          </div>
+          <span class="verdict-rank unused">待用存档</span>
+        </button>
+        <button id="quick-pick-pearl" type="button" class="verdict-pill-card" data-id="style-02-pearl-ripples">
+          <div>
+            <span class="verdict-pill-title">02 琉璃玉珠与镜湖涟漪 · 折叠风</span>
+            <span class="verdict-pill-sub">适合博弈决策、心理学、冷静哲思</span>
+          </div>
+          <span class="verdict-rank unused">待用存档</span>
+        </button>
+        <button id="quick-pick-lantern" type="button" class="verdict-pill-card" data-id="style-04-sky-lanterns">
+          <div>
+            <span class="verdict-pill-title">04 暖夜千灯与纸雕云海 · 孔明灯风</span>
+            <span class="verdict-pill-sub">适合人生哲理、历史人文、温情故事</span>
+          </div>
+          <span class="verdict-rank unused">待用存档</span>
+        </button>
+        <button id="quick-pick-watercolor" type="button" class="verdict-pill-card" data-id="style-05-cotton-watercolor">
+          <div>
+            <span class="verdict-pill-title">05 棉浆水彩与丝绸流场 · 治愈纸本</span>
+            <span class="verdict-pill-sub">唯一明亮米白纸本 · 温暖东方手账感</span>
+          </div>
+          <span class="verdict-rank unused">待用存档</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sticky Filter & Search Controls -->
+    <section class="controls-section" aria-label="筛选与搜索视觉风格">
+      <div class="tabs-row">
+        <div class="category-tabs" id="category-tabs" role="tablist">
+          <button id="tab-all" type="button" class="tab-btn active" data-tab="all">全部风格 (10)</button>
+          <button id="tab-unused-soft" type="button" class="tab-btn" data-tab="unused_soft">另外 4 款柔和待用存档 (4)</button>
+          <button id="tab-soft-all" type="button" class="tab-btn" data-tab="soft_poetic">柔和唯美无柱全集 (5)</button>
+          <button id="tab-production" type="button" class="tab-btn" data-tab="production">实战量产引擎 · 纪实/MG/图谱 (5)</button>
+        </div>
+      </div>
+
+      <div class="subfilters-row">
+        <div class="chip-group" id="subfilter-chips">
+          <button id="chip-tone-all" type="button" class="filter-chip active" data-tone="all">全部底色</button>
+          <button id="chip-tone-dark" type="button" class="filter-chip" data-tone="dark">深色夜曲 / 暗房</button>
+          <button id="chip-tone-light" type="button" class="filter-chip" data-tone="light">明亮暖白纸本</button>
+          <button id="chip-live-only" type="button" class="filter-chip" data-live="true">支持 60fps 实时动态演播</button>
+        </div>
+        <div class="search-wrap">
+          <input id="style-search-input" type="search" class="search-input" placeholder="搜索风格名 / 星萤 / 水彩 / 孔明灯 / 纪录片..." aria-label="搜索视觉风格" />
+        </div>
+      </div>
+    </section>
+
+    <div class="results-meta">
+      <span id="results-count-text">正在加载 10 款视觉风格档案…</span>
+      <span id="pinned-a-hint">提示：点击任意卡片「锁为 A 对比」，可在底栏开启左右拉帘同屏对比</span>
+    </div>
+
+    <section id="style-cards-grid" class="style-grid" aria-live="polite"></section>
+
+    <footer class="site-footer">
+      <div>
+        <span>渲染管线：Remotion 4 + HTML5 Canvas 2D + SVG 混合引擎 · 适配 <code>1920×1080</code> 横屏与 <code>1080×1920</code> 抖音竖屏安全区</span>
+      </div>
+      <div>
+        <a id="footer-tts-link" href="https://endiaoshuai.github.io/azure-tts-audition/" target="_blank" rel="noopener noreferrer">姊妹站：Azure 中文配音盲测台</a>
+        <span> · </span>
+        <a id="footer-drive-link" href="https://drive.google.com/drive/folders/1ngoosSWhNdJasBvUNxKgoJIuRdS230Sw" target="_blank" rel="noopener noreferrer">Google 云盘无损 PNG 原图</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Sticky Bottom Visual Compare Deck -->
+  <aside class="compare-deck" aria-label="视觉风格对比与选片控制台">
+    <div class="container deck-inner">
+      <div class="deck-status">
+        <span class="deck-badge">A 基准锁定</span>
+        <div>
+          <div id="deck-pinned-title" class="deck-title">STYLE-03 · 暮色丝绸沙丘与圆月拱门（风之旅人 × 光·遇）</div>
+          <div id="deck-pinned-sub" class="deck-sub">点击任意其他卡片的「动态演播」或下方按钮即可左右拉帘同屏对比</div>
+        </div>
+      </div>
+      <div class="deck-actions">
+        <button id="deck-open-ab-btn" type="button" class="deck-pill-btn">开启 A/B 拉帘对比</button>
+        <button id="deck-copy-pinned-btn" type="button" class="deck-pill-btn accent">复制当前 A 选片口令</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Cinema Lightbox Modal (Real-time 60fps Canvas + 1080p Still + A/B Curtain) -->
+  <div id="cinema-lightbox" class="lightbox-backdrop" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+    <div class="lightbox-dialog">
+      <div class="lightbox-top">
+        <div class="lightbox-title-wrap">
+          <h3 id="lb-title">视觉风格预览</h3>
+          <p id="lb-subtitle">1920×1080 · 实时动态演播</p>
+        </div>
+        <div class="lightbox-controls">
+          <button id="lb-mode-live-btn" type="button" class="deck-pill-btn accent">▶ 60fps 动态演播</button>
+          <button id="lb-mode-still-btn" type="button" class="deck-pill-btn">1080P 设计原图</button>
+          <button id="lb-mode-ab-btn" type="button" class="deck-pill-btn">A/B 左右拉帘对比</button>
+          <a id="lb-download-btn" class="action-link" href="#" download>下载原图</a>
+          <button id="lb-close-btn" type="button" class="deck-pill-btn" aria-label="关闭预览">✕ 关闭</button>
+        </div>
+      </div>
+
+      <div id="lb-viewport" class="lightbox-viewport">
+        <img id="lb-still-img" src="" alt="视觉风格高清静态帧" />
+        <canvas id="lb-live-canvas" width="1920" height="1080"></canvas>
+        <div id="lb-ab-layer" class="ab-overlay-layer">
+          <img id="lb-ab-img" src="" alt="A 基准对比图" />
+        </div>
+        <div id="lb-ab-divider" class="ab-divider-line">
+          <span id="lb-ab-tag" class="ab-handle-tag">◀ A 基准 | 当前风格 ▶</span>
+        </div>
+      </div>
+
+      <div class="lightbox-bottom">
+        <div id="lb-prompt-box" class="prompt-preview"></div>
+        <button id="lb-copy-prompt-btn" type="button" class="deck-pill-btn accent">一键复制选片口令</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
